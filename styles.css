@@ -126,3 +126,60 @@ form button:hover {
     text-decoration: none;
     color: black;
 }
+
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    section {
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+    .project, .mini-project, .testimonial {
+        margin-bottom: 1rem;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    form input, form textarea, form button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    section {
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    form input, form textarea, form button {
+        width: 100%;
+    }
+}
