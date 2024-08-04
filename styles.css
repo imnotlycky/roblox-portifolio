@@ -127,6 +127,11 @@ form button:hover {
     color: black;
 }
 
+#video {
+    width: 640px;
+    height: 360px;
+}
+
 @media (max-width: 768px) {
     header {
         padding: 0.5rem;
@@ -152,6 +157,18 @@ form button:hover {
 
     form input, form textarea, form button {
         width: 100%;
+    }
+
+    #video {
+        width: 550px;
+        height: 300px
+    }
+}
+
+@media (max-width: 590px) {
+    #video {
+        width: 420px;
+        height: 200px
     }
 }
 
@@ -181,5 +198,10 @@ form button:hover {
 
     form input, form textarea, form button {
         width: 100%;
+    }
+
+    #video {
+        width: 80%;
+        height: 50%
     }
 }
