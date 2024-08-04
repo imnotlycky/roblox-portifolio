@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Document is ready!');
-    // Add your JavaScript here
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
 });

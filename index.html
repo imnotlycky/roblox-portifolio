@@ -13,32 +13,112 @@
             <ul>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#mini-projects">Mini Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#payment">Payment</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <section id="about">
         <h2>About Me</h2>
-        <p>I'm a Roblox developer with a passion for creating fun and engaging games.</p>
+        <p>Hi! My name is Imnotlycky, but you can call me Lycky. I've been scripting on Roblox for almost five years now, starting back in late summer 2019. Over the years, I've developed a strong passion for creating fun and engaging games. I love exploring new ideas and pushing the boundaries of what’s possible on the Roblox platform. Whether it's working on game mechanics, scripting, or designing user experiences, I always strive to improve and make something awesome.</p>
     </section>
+
     <section id="projects">
         <h2>My Projects</h2>
+        <hr>
         <div class="project">
-            <h3>Game 1</h3>
-            <p>Description of Game 1.</p>
-        </div>
-        <div class="project">
-            <h3>Game 2</h3>
-            <p>Description of Game 2.</p>
+            <h3>Tiny 2D Bread Factory 2</h3>
+            <p>The first real 2d game uploaded to roblox With almost 20k visits!</p>
+            <div class="iframe-container">
+                <img src="https://tr.rbxcdn.com/226f96c54a1cd7004166567177833257/150/150/Image/Webp" alt="Game 1 Thumbnail">
+            </div>
+            <br>
+            <a id="project-link" href="https://www.roblox.com/games/14582193124/Tiny-2D-Bread-Factory-2-Christmas-Part-1">Game Link</a>
         </div>
     </section>
+
+    <section id="mini-projects">
+        <h2>Mini Projects</h2>
+        <hr>
+        <div class="mini-project">
+            <h3>Mannequin</h3>
+            <p>I used pathfinding to make the mannequin move and when your looking at it, its animation pauses and it stops moving and when you look away again it start moving again</p>
+            <video width="640" height="360" controls><source src="Projects/Mannequin.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills (Scripting)</h2>
+        <div class="skill">
+            <label for="lua">DataStores</label>
+            <div class="skill-bar" id="lua" style="width: 90%;">90%</div>
+        </div>
+        <div class="skill">
+            <label for="game-design">Front-Side Scripting</label>
+            <div class="skill-bar" id="game-design" style="width: 70%;">70%</div>
+        </div>
+        <div class="skill">
+            <label for="game-design">Back-End Scripting</label>
+            <div class="skill-bar" id="game-design" style="width: 60%;">60%</div>
+        </div>
+        <div class="skill">
+            <label for="modeling">Randomization | Rng</label>
+            <div class="skill-bar" id="modeling" style="width: 90%;">90%</div>
+        </div>
+        <div class="skill">
+            <label for="uiux">UI Scripting | UI Animations</label>
+            <div class="skill-bar" id="uiux" style="width: 85%;">85%</div>
+        </div>
+        <div class="skill">
+            <label for="project-management">OOP | Oriented Object Programming</label>
+            <div class="skill-bar" id="project-management" style="width: 85%;">85%</div>
+        </div>
+        <div class="skill">
+            <label for="project-management">Pathfinding</label>
+            <div class="skill-bar" id="project-management" style="width: 65%;">65%</div>
+        </div>
+    </section>
+
+    <section id="payment">
+        <h2>Payment</h2>
+        <hr>
+        <h4>Minimum Payments:</h4>
+        <p>1,000 Robux (without tax)</p>
+        <p>5$ Paypal</p>
+        <p>10% from revenue of the game</p>
+    </section>
+
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>You can reach me at myemail@example.com.</p>
+        <hr>
+        <p>Discord: imnotlycky</p>
+        <p>Roblox: <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.roblox.com%2Fusers%2F679750404%2Fprofile&sa=D" id="contact-link" target="_blank">imnotlycky</a></p>
+        <!--<p>Youtube: <a href="https://www.youtube.com/channel/UCxqIQMgXqjA8W9Ya20FDD8A" id="contact-link" target="_blank">imnotlycky</a></p>
+        <p>Twitch: <a href="https://www.twitch.tv/imnotlycky" id="contact-link" target="_blank">imnotlycky</a></p>-->
+        <br>
+        <h3>DISCLAIMER! i only check my gmail once in a while (between a week or two)</h3>
+        <form action="mailto:imnotlycky@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
+
+    <div id="gap"></div>
+    
     <footer>
         <p>&copy; 2024 My Roblox Portfolio</p>
     </footer>
+
     <script src="scripts.js"></script>
 </body>
 </html>

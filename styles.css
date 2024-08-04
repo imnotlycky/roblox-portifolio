@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -43,4 +47,82 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+blockquote {
+    border-left: 5px solid #333;
+    padding-left: 1rem;
+    margin-left: 0;
+    font-style: italic;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 0.5rem;
+}
+
+form input, form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+.skill {
+    margin-bottom: 1rem;
+}
+
+.skill-bar {
+    background-color: #333;
+    color: white;
+    text-align: right;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+#project, #mini-project {
+    margin-bottom: 1.5rem;
+}
+
+#contact-link {
+    text-decoration: none;
+    color: black;
+}
+
+#gap {
+    padding: 20px;
+}
+
+#video {
+    width: 400px;
+    height: 300px;
+}
+
+#project-link {
+    text-decoration: none;
+    color: black;
 }
