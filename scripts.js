@@ -1,4 +1,4 @@
-let data = "JobAppId_V1.04"
+let data = "JobAppId_V1.05"
 
 let jobid = localStorage.getItem(data) || 1
 
@@ -23,14 +23,12 @@ document.getElementById("formdc").addEventListener("submit", function(e) {
   let deadline = document.getElementById("deadline").value || "No Deadline";
   let extra = document.getElementById("extraInfo").value || "No Extra Info";
 
-  const request = new XMLHttpRequest();
+  /*const request = new XMLHttpRequest();
   request.open("POST", "https://discord.com/api/webhooks/1291389655429812366/DDj8ZvVjCCk7Y89gpNtdwALfwrP_XqYMo8YpzefZolSQlzqTuH8Z7NobPP68yBgcODUO")
 
-  request.setRequestHeader("Content-type", "application/json")
+  request.setRequestHeader("Content-type", "application/json")*/
 
   const date = new Date();
-
-  let timestamp = date.toISOString();
 
   let params = {
       "name": "JobAppGuy",
@@ -53,19 +51,42 @@ document.getElementById("formdc").addEventListener("submit", function(e) {
           "footer": {
             "text": "Submit Time"
           },
-          "timestamp": timestamp
+          "timestamp": date.toISOString()
         }
       ],
       "username": "JobAppGuy",
       "attachments": []
   }
 
-  request.send(JSON.stringify(params));
+  //request.send(JSON.stringify(params));
 
-  request.onload = () => {
+  /*request.onload = () => {
     if (request.status == 204) {
       jobid++;
       localStorage.setItem(data, jobid)
     }
-  }
+  }*/
+
+  fetch("https://discord.com/api/webhooks/1291389655429812366/DDj8ZvVjCCk7Y89gpNtdwALfwrP_XqYMo8YpzefZolSQlzqTuH8Z7NobPP68yBgcODUO", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(params)
+  })
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Network response was not ok")
+    }
+    return response.text()
+  })
+  .then(data1 => {
+    jobid++;
+    localStorage.setItem(data, jobid)
+    console.log("Success:", data1)
+  })
+  .catch(error => {
+    console.error("Error:", error)
+  })
+
 })
