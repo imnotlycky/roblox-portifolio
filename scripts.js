@@ -1,4 +1,4 @@
-let data = "JobAppId_V1.06"
+let data = "JobAppId_V1.07"
 
 let jobid = localStorage.getItem(data) || 1
 
