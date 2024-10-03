@@ -1,4 +1,4 @@
-let data = "JobAppId_V1.05"
+let data = "JobAppId_V1.06"
 
 let jobid = localStorage.getItem(data) || 1
 
@@ -84,6 +84,18 @@ document.getElementById("formdc").addEventListener("submit", function(e) {
     jobid++;
     localStorage.setItem(data, jobid)
     console.log("Success:", data1)
+
+    document.getElementById("dcName").value = "";
+    document.getElementById("reason").value = "";
+    document.getElementById("budget").value = "";
+    document.getElementById("deadline").value = "";
+    document.getElementById("extraInfo").value = ""
+
+    document.getElementById("okay1").value = "Submitted"
+
+    setTimeout(function() {
+       document.getElementById("okay1").value = "Submit"
+    }, 1000)
   })
   .catch(error => {
     console.error("Error:", error)
