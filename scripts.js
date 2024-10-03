@@ -11,6 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+
+    let date = new Date();
+
+    document.getElementById("copyid").innerHTML = `&copy; ${date.getFullYear()} imnotlycky`
 });
 
 
