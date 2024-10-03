@@ -31,7 +31,7 @@ document.getElementById("formdc").addEventListener("submit", function(e) {
       "embeds": [
         {
           "title": "Job App",
-          "description": `Why (we | i) want to hire you:\n${desc}\n\nMy | our Budget is:\n${budget}\n\nDeadline is on:\n${deadline}\n\nExtra info about the Project:\n${extra}`,
+          "description": `Why (we or i) want you to choose my Project:\n${desc}\n\nMy or our Budget is:\n${budget}\n\nDeadline is on:\n${deadline}\n\nExtra info about the Project:\n${extra}`,
           "color": 255,
           "fields": [
             {
