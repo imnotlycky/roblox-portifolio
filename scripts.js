@@ -23,11 +23,6 @@ document.getElementById("formdc").addEventListener("submit", function(e) {
   let deadline = document.getElementById("deadline").value || "No Deadline";
   let extra = document.getElementById("extraInfo").value || "No Extra Info";
 
-  /*const request = new XMLHttpRequest();
-  request.open("POST", "https://discord.com/api/webhooks/1291389655429812366/DDj8ZvVjCCk7Y89gpNtdwALfwrP_XqYMo8YpzefZolSQlzqTuH8Z7NobPP68yBgcODUO")
-
-  request.setRequestHeader("Content-type", "application/json")*/
-
   const date = new Date();
 
   let params = {
@@ -57,15 +52,6 @@ document.getElementById("formdc").addEventListener("submit", function(e) {
       "username": "JobAppGuy",
       "attachments": []
   }
-
-  //request.send(JSON.stringify(params));
-
-  /*request.onload = () => {
-    if (request.status == 204) {
-      jobid++;
-      localStorage.setItem(data, jobid)
-    }
-  }*/
 
   fetch("https://discord.com/api/webhooks/1291389655429812366/DDj8ZvVjCCk7Y89gpNtdwALfwrP_XqYMo8YpzefZolSQlzqTuH8Z7NobPP68yBgcODUO", {
     method: "POST",
