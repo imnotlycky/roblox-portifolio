@@ -99,6 +99,11 @@ document.getElementById("formdc").addEventListener("submit", function(e) {
   })
   .catch(error => {
     console.error("Error:", error)
+    document.getElementById("okay1").value = "There was an error while submitting, Try again later."
+
+    setTimeout(function() {
+      document.getElementById("okay1").value = "Submit"
+    }, 1000)
   })
 
 })
